@@ -6,8 +6,8 @@ A basic playbook to install the packages most used in servers, this can be used 
 Example Playbook
 ----------------
 
-A basic playbook to call this role, also provided in the project.
-
+A basic playbook to call this role
+```
 - name: Setup basic RHEL 9 system
   hosts: targets
   become: true
@@ -16,6 +16,7 @@ A basic playbook to call this role, also provided in the project.
     - name: Run the basic setup
       import_role:
         name: base-rhel-9
+```
 
 License
 -------
